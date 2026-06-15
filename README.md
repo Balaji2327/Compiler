@@ -347,6 +347,7 @@ These scientific articles cite Judge0.
 * [多语言代码执行沙盒 judge0 部署](https://blog.csdn.net/qq_20919883/article/details/160027311)
 * [开源在线评测系统（OJ）沙盒解决方案对比分析](https://blog.csdn.net/bhl120/article/details/158467526)
 * [手把手教你用Docker部署Judge0：打造自己的在线代码评测系统](https://blog.csdn.net/ggg99/article/details/153605598)
+* [自社採用サービスに「コーディングテスト機能（オンラインジャッジ）」を実装した話 — Judge0 セルフホスト × Go × CodeMirror 6](https://qiita.com/appsaiyouba/items/e25c23079e23696da09e)
 
 ## Showcase
 
