@@ -240,6 +240,7 @@ These scientific articles cite Judge0.
 * [Building a Leetcode clone backend](https://kibichomurage.medium.com/building-a-leetcode-clone-backend-462fa1084aa5)
 * [Building Beyond the Clone: Scaling Systems and Finding Purpose in the Pivot](https://medium.com/@neeharikagudipudi/building-beyond-the-clone-scaling-systems-and-finding-purpose-in-the-pivot-e8c3733f91aa)
 * [Building CodeNova: System Design Deep Dive into an AI-Enhanced Coding Platform](https://dev.to/bchikara/building-codenova-system-design-deep-dive-into-an-ai-enhanced-coding-platform-11d4)
+* [Building Scalable Code Execution Platforms Using Judge0](https://blog.nife.io/post/building-scalable-code-execution-platforms-using-judge0/)
 * [C Code Runner with Monaco Editor | Judge0 API Integration Fetching Github repo](https://www.youtube.com/watch?v=OIfhZ5gA_L0)
 * [Code Execution in Kestra’s AI Agents Powered by Judge0](https://judge0.com/blog/code-execution-in-kestras-ai-agents-powered-by-judge0)
 * [CodeAIDE Walkthrough | Online AI IDE Project](https://www.youtube.com/watch?v=Z7fe3DVCqWo)
