@@ -374,6 +374,7 @@ These open-source projects are using Judge0. You can add yours as well by creati
 * [Dev Arsenal by Akhmad Khudri](https://devpost.com/software/dev-arsenal)
 * [DraftCode.io by Rotonda](https://dev.to/mulelur/i-built-draftcodeio-a-modern-open-leetcode-style-platform-for-coding-challenges-p9a)
 * [Edura - AI Powered Study & Learning Companion by apurva k](https://devpost.com/software/eduniverse-ai-powered-learning-platform)
+* [I Built the Ultimate All-in-One Platform for Software Engineers — Here's the Full Architecture](https://dev.to/phero20/i-built-the-ultimate-all-in-one-platform-for-software-engineers-heres-the-full-architecture-5ce3)
 * [Judge0 CE MCP Server by BACH-AI-Tools](https://glama.ai/mcp/servers/@BACH-AI-Tools/judge0_ce)
 * [Judge0 CE MCP Server by bachstudio via Evanth](https://chat.evanth.io/discover/mcp/bachstudio-bach-judge0_ce)
 * [Judge0 CE MCP Server by bachstudio via LobeHub](https://lobehub.com/mcp/bachstudio-bach-judge0_ce)
