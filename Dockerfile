@@ -1,4 +1,4 @@
-FROM debian:buster AS production
+FROM debian:bullseye AS production
 
 # Install curl, ca-certificates, and jq to fetch the compilers image layers
 RUN apt-get update && \
