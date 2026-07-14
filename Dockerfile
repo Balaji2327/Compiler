@@ -1,8 +1,17 @@
-FROM judge0/compilers:1.4.0 AS compilers
-
 FROM debian:buster AS production
 
-COPY --from=compilers --chown=0:0 / /
+# Install curl, ca-certificates, and jq to fetch the compilers image layers
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends curl ca-certificates jq && \
+    rm -rf /var/lib/apt/lists/*
+
+# Pull and extract the judge0/compilers:1.4.0 layers directly, resetting ownership to root (0:0)
+RUN token=$(curl -s "https://auth.docker.io/token?service=registry.docker.io&scope=repository:judge0/compilers:pull" | jq -r .token) && \
+    manifest=$(curl -sL -H "Authorization: Bearer $token" -H "Accept: application/vnd.docker.distribution.manifest.v2+json" "https://registry-1.docker.io/v2/judge0/compilers/manifests/1.4.0") && \
+    for digest in $(echo "$manifest" | jq -r '.layers[].digest'); do \
+      echo "Extracting layer $digest..." && \
+      curl -sL -H "Authorization: Bearer $token" "https://registry-1.docker.io/v2/judge0/compilers/blobs/$digest" | tar --no-same-owner -xf - -C /; \
+    done
 
 
 ENV JUDGE0_HOMEPAGE "https://judge0.com"
