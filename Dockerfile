@@ -1,4 +1,9 @@
-FROM judge0/compilers:1.4.0 AS production
+FROM judge0/compilers:1.4.0 AS compilers
+
+FROM debian:buster AS production
+
+COPY --from=compilers --chown=0:0 / /
+
 
 ENV JUDGE0_HOMEPAGE "https://judge0.com"
 LABEL homepage=$JUDGE0_HOMEPAGE
