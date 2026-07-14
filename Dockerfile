@@ -10,7 +10,7 @@ RUN token=$(curl -s "https://auth.docker.io/token?service=registry.docker.io&sco
     manifest=$(curl -sL -H "Authorization: Bearer $token" -H "Accept: application/vnd.docker.distribution.manifest.v2+json" "https://registry-1.docker.io/v2/judge0/compilers/manifests/1.4.0") && \
     for digest in $(echo "$manifest" | jq -r '.layers[].digest'); do \
       echo "Extracting layer $digest..." && \
-      curl -sL -H "Authorization: Bearer $token" "https://registry-1.docker.io/v2/judge0/compilers/blobs/$digest" | tar --no-same-owner -xf - -C /; \
+      curl -sL -H "Authorization: Bearer $token" "https://registry-1.docker.io/v2/judge0/compilers/blobs/$digest" | tar --no-same-owner -xf - -C / usr/local opt 2>/dev/null || true; \
     done
 
 
